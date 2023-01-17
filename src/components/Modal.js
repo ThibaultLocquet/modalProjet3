@@ -8,7 +8,11 @@ const Modal = () => {
     const toggleModal = () => {
         setModal(!modal)
     }
-
+    if(modal) {
+        document.body.classList.add('active-modal')
+      } else {
+        document.body.classList.remove('active-modal')
+      }
     return (
         <div>
             <button onClick={toggleModal} className='btn-modal'>Open</button>

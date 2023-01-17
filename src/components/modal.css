@@ -154,6 +154,7 @@ body.active-modal {
     display: flex;
     width: 80%;
     padding-inline: 10%;
+    overflow-x: hidden;
     overflow-y: scroll;
     max-height: 10em;
 }
@@ -161,7 +162,8 @@ body.active-modal {
     width: 33%;
     position: absolute;
     top: 50%;
-    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: scroll;
     left: 34%;
     margin: 0 auto;
     height: 40%;
@@ -176,7 +178,8 @@ body.active-modal {
     height: 4em;
 }
 .content{
-    overflow-x: scroll;
+    overflow-x: hidden;
+    overflow-y: scroll;
     height: 100%;
 }
 @media (max-width: 914px){
@@ -233,9 +236,9 @@ body.active-modal {
     .jobs-dispo-part {
         width: 16em;
         left: 50%;
-        height: 44%;
+        height: 12em;
         position: absolute;
-        top: 90%;
+        top: 83%;
         transform: translate(-50%, -50%);
     }
     .jobs-title {

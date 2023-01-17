@@ -10,6 +10,7 @@ const Job = () => {
     function toggleIsLike() {
         setIsLiked(!isLiked);
       }
+        
     return (
         <div>
             <div className='job-container'>
