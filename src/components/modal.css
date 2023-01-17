@@ -131,9 +131,8 @@ body.active-modal {
     justify-content: center;
     align-items: center;
     display: flex;
-    position: absolute;
-    top: 40%;
-    left: 39%;
+    position: relative;
+    bottom: 1.4em;
 }
 .job-title{
     font-size: 1em;
@@ -161,7 +160,7 @@ body.active-modal {
 .jobs-dispo-part{
     width: 33%;
     position: absolute;
-    top: 55%;
+    top: 50%;
     overflow: scroll;
     left: 34%;
     margin: 0 auto;
@@ -177,15 +176,18 @@ body.active-modal {
     height: 4em;
 }
 .content{
-    overflow: scroll;
+    overflow-x: scroll;
     height: 100%;
 }
 @media (max-width: 914px){
     .modal-content {
         min-height: 100%;
     }
+    .close-modal{
+        top: 0.5rem;
+        left: 0.5rem;
+    }
     .logo-entreprise{
-        display: none;
         position: absolute;
         top: 14%;
         left: 50%;
@@ -193,11 +195,11 @@ body.active-modal {
     }
     .reseaux-icons{
         transform: translate(-50%, -50%);
-        top: 14%;
-        left: 50%;
+        top: 7%;
+        left: 84%;
         flex-direction: column;
-        background-color: #FFFFFF;
         height: 8em;
+        width: 0px;
     }
     .linkedin-logo{
         width: 2.2em;
@@ -210,13 +212,17 @@ body.active-modal {
     .facebook-logo{
         width: 2.2em;
         height: 12em;
-    }s
+    }
     .instagram-logo{
         width: 2.2em;
         height: 12em;
     }
     .presentation-part{
-        display: none;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 44%;
+        left: 50%;
+        width: 15Em;
     }
     .profils-recherche-part{
         display: none;
@@ -226,15 +232,17 @@ body.active-modal {
     }
     .jobs-dispo-part {
         width: 16em;
-        top: 27em;
-        left: 0%;
+        left: 50%;
         height: 44%;
-        position: relative;
+        position: absolute;
+        top: 90%;
+        transform: translate(-50%, -50%);
     }
     .jobs-title {
-        top: 62%;
+        top: 61%;
         left: 50%;
         transform: translate(-50%, -50%);
         width: 8em;
+        position: absolute;
     }
 }

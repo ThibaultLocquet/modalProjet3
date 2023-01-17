@@ -38,18 +38,15 @@ const Modal = () => {
                                     nihil alias laboriosam?
                                     </p>
                                 </div>
-                                <div className='jobs-dispo-part'>
                                 <h2 className='jobs-title'>X-jobs Disponible</h2>
-                                <div className='jobcontainer'>
-                                    <Job />
-                                    <Job />
-                                    <Job />
-                                    <Job />
-                                    <Job />
-                                    <Job />
-                                    <Job />
-                                </div>
-
+                                <div className='jobs-dispo-part'>
+                                            <Job />
+                                            <Job />
+                                            <Job />
+                                            <Job />
+                                            <Job />
+                                            <Job />
+                                            <Job />
                                 </div>
                                 <div className='profils-recherche-part'>
                                     <h2 className='title'>Profils recherché</h2>
