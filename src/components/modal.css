@@ -1,0 +1,240 @@
+body.active-modal {
+    overflow-y: hidden;
+}
+
+.btn-modal {
+    padding: 10px 20px;
+    display: block;
+    margin: 100px auto 0;
+    font-size: 18px;
+}
+
+.modal, .overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+.overlay {
+    background: rgba(49,49,49,0.8);
+}
+.modal-content {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background: #FFFFFF;
+    border-radius: 3px;
+    max-width: 600px;
+    min-width: 80%;
+    min-height: 85%;
+    justify-content: space-between;
+}
+
+.close-modal {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 10px;
+    left: 1.5rem;
+    border: none;
+    border-radius: 10px;
+}
+
+.background-img{
+    position: absolute;
+    top: 0;
+    height: 40%;
+    width: 100%;
+    background-size: cover;
+    background-image: url(https://cdn-images.welcometothejungle.com/GiPEmAPZC-w-ahyQFt9JYLrpCAMMwVwiLSvNiExtgnE/rs:auto:2000:450:/q:85/czM6Ly93dHRqLXByb2R1Y3Rpb24vdXBsb2Fkcy93ZWJzaXRlX29yZ2FuaXphdGlvbi9jb3Zlcl9pbWFnZS93dHRqX2ZyL2ZyLTIzZjMxYTkwLWI1OGUtNGI5MS04MWY0LTkwN2IwZWE2ODkxNi5qcGc);
+}
+.logo-entreprise{
+    position: absolute;
+    top: 11%;
+    left: 9%;
+    background-size: cover;
+    background-image: url(https://cdn-images.welcometothejungle.com/-WhecC4kv1_iFbX17OydwLvbxPt_4rmFem_9hCPtipc/rs:auto:400::/q:85/czM6Ly93dHRqLXByb2R1Y3Rpb24vdXBsb2Fkcy9vcmdhbml6YXRpb24vbG9nby81NTgxLzE2NTY2OC84OGViODRlNC0wMTI5LTQyNTUtYThhNi0yOTcxMGNlMzUyMjkucG5n);
+    z-index: 1;
+    height: 10em;
+    width: 10em;
+    border: solid;
+
+}
+.reseaux-icons{
+    position: absolute;
+    background-color: #F5F5F5;
+    height: 100px;
+    z-index: 3;
+    right: 7%;
+    top: 11%;
+    width: 35%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.linkedin-logo{
+    position: relative;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg);
+    background-size: cover;
+    width: 3em;
+    height: 3em;
+    top: 25%;
+    cursor: pointer;
+}
+.twitter-logo{
+    position: relative;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/4/4f/Twitter-logo.svg);
+    background-size: cover;
+    top: 25%;
+    width: 3em;
+    height: 2.6em;
+    cursor: pointer;
+}
+.facebook-logo{
+    position: relative;
+    width: 20%;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/d/d5/Facebook_F_icon.svg);
+    background-size: cover;
+    height: 44%;
+    top: 25%;
+    width: 3em;
+    cursor: pointer;
+    height: 3em;
+}
+.instagram-logo{
+    position: relative;
+    width: 3em;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg);
+    background-size: cover;
+    height: 3em;
+    cursor: pointer;
+    top: 25%;
+}
+.presentation-part{
+    width: 33%;
+}
+.title{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 40%;
+}
+.jobs-title{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    top: 40%;
+    left: 39%;
+}
+.job-title{
+    font-size: 1em;
+}
+.tags-container{
+    display: flex;
+    font-size: 0.7em;
+    position: relative;
+    top: -3em;
+}
+.like-button{
+    position: relative;
+    bottom: 4em;
+    left: 84%;
+}
+.content{
+    top: 40%;
+    position: relative;
+    display: flex;
+    width: 80%;
+    padding-inline: 10%;
+    overflow-y: scroll;
+    max-height: 10em;
+}
+.jobs-dispo-part{
+    width: 33%;
+    position: absolute;
+    top: 55%;
+    overflow: scroll;
+    left: 34%;
+    margin: 0 auto;
+    height: 40%;
+}
+.profils-recherche-part{
+    width: 33%;
+}
+.job-container{
+    width: 98%;
+    border: solid 2px;
+    border-radius: 10px;
+    height: 4em;
+}
+.content{
+    overflow: scroll;
+    height: 100%;
+}
+@media (max-width: 914px){
+    .modal-content {
+        min-height: 100%;
+    }
+    .logo-entreprise{
+        display: none;
+        position: absolute;
+        top: 14%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .reseaux-icons{
+        transform: translate(-50%, -50%);
+        top: 14%;
+        left: 50%;
+        flex-direction: column;
+        background-color: #FFFFFF;
+        height: 8em;
+    }
+    .linkedin-logo{
+        width: 2.2em;
+        height: 12em;
+    }
+    .twitter-logo{
+        width: 2em;
+        height: 10em;
+    }
+    .facebook-logo{
+        width: 2.2em;
+        height: 12em;
+    }s
+    .instagram-logo{
+        width: 2.2em;
+        height: 12em;
+    }
+    .presentation-part{
+        display: none;
+    }
+    .profils-recherche-part{
+        display: none;
+    }
+    .background-img{
+        display: none;
+    }
+    .jobs-dispo-part {
+        width: 16em;
+        top: 27em;
+        left: 0%;
+        height: 44%;
+        position: relative;
+    }
+    .jobs-title {
+        top: 62%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 8em;
+    }
+}
